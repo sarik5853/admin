@@ -1,8 +1,8 @@
 const { Router } = require("express");
 const router = Router();
 const bcrypt = require("bcrypt");
-const jwt = require("../../utils/jwt");
-const Users = require("./model");
+const jwt = require("../utils/jwt");
+const Users = require("../models/users");
 
 router.post("/login", async(req, res) => {
     try {
