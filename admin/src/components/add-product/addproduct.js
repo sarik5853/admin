@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdOutlineCancel } from 'react-icons/md';
 
 import './addproduct.css';
 
@@ -6,6 +7,36 @@ const AddProduct = () => {
     return(
         <div className='add-product container'>
             <form className='add-product-wrapper'>
+                <div className='add-photo-wrapper'>
+                    <label className='add-product-item'>
+                    фото
+                    <input type='file'/>
+                    <button>добавить</button>
+                    </label>
+                    <div className='add-photo-item'>
+                        <div className='add-photo'>
+                            <p>photo</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>photo</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>photo</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>photo</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>photo</p>
+                            <MdOutlineCancel/>
+                        </div>
+                    </div>
+                    
+                </div>
                 <div className='add-product-item-top'>
                    <label className='add-product-item'>
                     Название
@@ -21,7 +52,7 @@ const AddProduct = () => {
                 </label> 
                 </div>
                 <div className='add-product-item-center'>
-                   <label className='add-product-item'>
+                   <label className='add-product-item'>'
                 Тип одежды
                     <input type='text' placeholder='Тип одежды'/>
                 </label>
