@@ -1,0 +1,121 @@
+.add-product-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin-top: 30px;
+}
+.add-product-item-top,.add-product-item-center,.add-product-item-bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.add-product-item{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    row-gap: 10px;
+}
+.add-product-item{
+    font-size: 18px;
+    line-height: 16px;
+    color: #000;
+    font-weight: 400;
+}
+.add-product-item-bottom{
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.add-product-size{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+.add-product-size span{
+    width: 52px;
+    height: 55px;
+    background: #FFBEBE;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 2px solid #FFBEBE;
+    transition: all;
+}
+.add-product-size span:hover{
+    border: 2px solid green;
+}
+.add-product-item-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.add-product-item input{
+    width: 100%;
+    height: 55px;
+    border: 2px solid #FFBEBE;
+    border-radius: 8px;
+    background: #FFBEBE;
+    transition: all 300ms;
+    padding: 15px 5px;
+    cursor: pointer;
+}
+.add-product-item input:focus{
+    outline: none;
+}
+.add-product-item input:hover{
+    background: transparent;
+}
+
+.add-product-item input::placeholder{
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 400;
+    transition: all 300ms;
+}
+.add-product-item input:hover::placeholder{
+    color: #000;
+}
+.add-product-link{
+    width: 100%;
+    height: 55px;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #FFBEBE;
+    border: 3px solid #FFBEBE;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+.add-product-link:hover{
+    color: #000;
+    background: transparent;
+}
+
+@media(max-width:535px){
+    .add-product-item-top,.add-product-item-center,.add-product-item-bottom{
+        flex-direction: column;
+    }
+    .add-product-item{
+        width: 100%;
+    }
+}

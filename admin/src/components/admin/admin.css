@@ -1,0 +1,152 @@
+.admin{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    min-height: 100vh;
+}
+.admin-content{
+    width: 80%;
+    overflow: hidden;
+}
+.admin-nav{
+    width: 100%;
+    height: 100px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 15px 30px;
+}
+.admin-logo{
+    width: 177px;
+    height: 77px;
+}
+.admin-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.admin-search{
+    width: 335px;
+    height: 46px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 15px 20px;
+}
+.admin-search input{
+    width: 85%;
+    font-size: 18px;
+    border: none;
+}
+.admin-search input:focus{
+    outline: none;
+}
+.admin-search svg{
+    width: 22px;
+    height: 22px;
+}
+.admin__wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+.admin-list{
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background: #fff;
+    border-right: 2px solid #000;
+}
+.ant-collapse > .ant-collapse-item{
+    border-bottom: 1px solid #FFE3E3;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow svg{
+    color: #FFBEBE;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header{
+    font-size: 16px;
+    line-height: 14px;
+    color: #000;
+    font-weight: 500;
+}
+.ant-collapse-content > .ant-collapse-content-box p{
+    font-size: 14px;
+    line-height: 12px;
+    color: #0000009f;
+}
+.ant-collapse-content > .ant-collapse-content-box p:hover{
+    color: #000;
+    cursor: pointer;
+}
+.admin-list-wrapper{
+    background: transparent;
+    border: none;
+}
+.admin-list-link{
+    border: none;
+    background: transparent;
+}
+.admin-nav-svg{
+    display: none;
+    width: 46px;
+    height: 46px;
+    padding: 7px;
+    border-radius: 10px;
+    background: #fff;
+    margin-left: 10px;
+}
+
+@media(max-width:1245px){
+    .admin-list{
+        width: 300px;
+        padding: 20px 20px;
+    }
+}
+@media(max-width:992px){
+    .admin-list{
+        width: 280px;
+        padding: 20px 20px;
+    }
+}
+@media(max-width:769px){
+    .admin-nav-svg{
+        display: block;
+    }
+    .admin-list{
+        width: 75%;
+        padding: 20px 15px;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 999;
+        margin-top: 86px;
+        transition: all 300ms;
+    }
+    .admin-list-active{
+        left: 0%;
+    }
+    .admin-content{
+        width: 100%;
+    }
+    .admin-nav{
+        height: 86px;
+    }
+    .admin-logo{
+        width: 143px;
+        height: 59px;
+    }
+}
+@media(max-width:535px){
+    .admin-search{
+        width: 58%;
+    }
+}

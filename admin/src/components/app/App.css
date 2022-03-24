@@ -1,0 +1,22 @@
+/* .admin-list-wrapper{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.admin-list-wrapper li{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    transition: all 400ms;
+}
+.admin-list-list{
+    width: 100%;
+    height: max-content;
+    display: none;
+    flex-direction: column;
+}
+.admin-list-list-active{
+    display: flex;
+} */
