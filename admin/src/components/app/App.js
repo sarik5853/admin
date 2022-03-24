@@ -17,6 +17,9 @@ import CatalogProduct from '../catalog-product';
 import AddMessage from '../add-message';
 import EditMessage from '../edit-message';
 import CataloMessage from '../catalog-message';
+import Login from '../login';
+import Registr from '../registration';
+
 
 
 
@@ -89,6 +92,8 @@ function App() {
           <Route path="/admin/addmessage" element={<AddMessage/>}/>
           <Route path="/admin/editmessage" element={<EditMessage/>}/>
           <Route path="/admin/catalogmessage" element={<CataloMessage/>}/>
+          <Route path="/admin/registration" element={<Registr/>}/>
+          <Route path="/admin/login" element={<Login/>}/>
           <Route path="*" element={<Navigate to="/admin" />} />
         </Routes>
         </div>  
