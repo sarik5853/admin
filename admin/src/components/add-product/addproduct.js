@@ -98,15 +98,11 @@ const AddProduct = () => {
                     </div>
                     
                 </div>
-                <div className='add-product-item-top'>
+                {/* <div className='add-product-item-top'>
                    <label className='add-product-item'>
                     Название
                     <input type='text' placeholder='Назваание'/>
                 </label>
-                {/* <label className='add-product-item'>
-                Фото
-                    <input type='file' placeholder='Назваание'/>
-                </label> */}
                 <label className='add-product-item'>
                 Цена
                     <input type='num' placeholder='Цена'/>
@@ -115,12 +111,34 @@ const AddProduct = () => {
                 Описание
                     <input type='text' placeholder='Описание'/>
                 </label> 
-                </div>
-                <div className='add-product-item-center'>
+                </div> */}
+                {/* <div className='add-product-item-center'>
                    <label className='add-product-item'>
                 Тип одежды
                     <input type='text' placeholder='Тип одежды'/>
                 </label>
+                </div> */}
+                <div className='add-product-item-wrapper'>
+                    <div className='add-product-item-left'>
+                        <label className='add-product-item'>
+                            Название
+                            <input type='text'  placeholder='Назваание'/>
+                        </label>
+                            <label className='add-product-item'>
+                            Тип одежды
+                            <input type='text' placeholder='Типодежды'/>
+                        </label>
+                        <label className='add-product-item'>
+                            Цена
+                            <input type='num' placeholder='Цена'/>
+                        </label>
+                    </div>
+                    <div className='add-product-item-right'>
+                        <label className='add-product-item'>
+                            Описание
+                            <textarea type='text' placeholder='Описание'/>
+                        </label> 
+                    </div>
                 </div>
                 <button className='add-product-link'>добавить</button>
             </form>
