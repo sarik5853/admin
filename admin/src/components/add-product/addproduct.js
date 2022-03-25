@@ -121,22 +121,7 @@ const AddProduct = () => {
                 Тип одежды
                     <input type='text' placeholder='Тип одежды'/>
                 </label>
-                
-                <label className='add-product-item'>
-                Цвет
-                    <input type='text' placeholder='Цвет'/>
-                </label> 
                 </div>
-                {/* <div className='add-product-item-bottom'>
-                Размеры
-                <label className='add-product-size'>
-                    <span>m</span>
-                    <span>s</span>
-                    <span>l</span>
-                    <span>xl</span>
-                    <span>xxl</span>
-                </label> 
-                </div> */}
                 <button className='add-product-link'>добавить</button>
             </form>
         </div>
