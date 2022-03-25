@@ -7,31 +7,92 @@ const AddProduct = () => {
     return(
         <div className='add-product container'>
             <form className='add-product-wrapper'>
+            <h1>Добавить товар</h1>
                 <div className='add-photo-wrapper'>
                     <label className='add-product-item'>
-                    фото
+                    Фото
                     <input type='file'/>
                     <button>добавить</button>
                     </label>
                     <div className='add-photo-item'>
                         <div className='add-photo'>
-                            <p>photo</p>
+                            <p>phasxaoto</p>
                             <MdOutlineCancel/>
                         </div>
                         <div className='add-photo'>
-                            <p>photo</p>
+                            <p>photascascascascao</p>
                             <MdOutlineCancel/>
                         </div>
                         <div className='add-photo'>
-                            <p>photo</p>
+                            <p>photxasxasxasxo</p>
                             <MdOutlineCancel/>
                         </div>
                         <div className='add-photo'>
-                            <p>photo</p>
+                            <p>photasxasxaso</p>
                             <MdOutlineCancel/>
                         </div>
                         <div className='add-photo'>
-                            <p>photo</p>
+                            <p>phoxasxasxto</p>
+                            <MdOutlineCancel/>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className='add-photo-wrapper'>
+                    <label className='add-product-item'>
+                    Размер
+                    <input type='text' placeholder='размер:'/>
+                    <button>добавить</button>
+                    </label>
+                    <div className='add-photo-item'>
+                        <div className='add-photo'>
+                            <p>xxxl</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>s</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>m</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>xl</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>xxl</p>
+                            <MdOutlineCancel/>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div className='add-photo-wrapper'>
+                    <label className='add-product-item'>
+                    Цвет
+                    <input type='text' placeholder='Цвет'/>
+                    <button>добавить</button>
+                    </label>
+                    <div className='add-photo-item'>
+                        <div className='add-photo'>
+                            <p>красный</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>синий</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>оранжевый</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>фиолетовый</p>
+                            <MdOutlineCancel/>
+                        </div>
+                        <div className='add-photo'>
+                            <p>молочный</p>
                             <MdOutlineCancel/>
                         </div>
                     </div>
@@ -42,9 +103,13 @@ const AddProduct = () => {
                     Название
                     <input type='text' placeholder='Назваание'/>
                 </label>
-                <label className='add-product-item'>
+                {/* <label className='add-product-item'>
                 Фото
                     <input type='file' placeholder='Назваание'/>
+                </label> */}
+                <label className='add-product-item'>
+                Цена
+                    <input type='num' placeholder='Цена'/>
                 </label>
                 <label className='add-product-item'>
                 Описание
@@ -52,20 +117,17 @@ const AddProduct = () => {
                 </label> 
                 </div>
                 <div className='add-product-item-center'>
-                   <label className='add-product-item'>'
+                   <label className='add-product-item'>
                 Тип одежды
                     <input type='text' placeholder='Тип одежды'/>
                 </label>
-                <label className='add-product-item'>
-                Цена
-                    <input type='num' placeholder='Цена'/>
-                </label>
+                
                 <label className='add-product-item'>
                 Цвет
                     <input type='text' placeholder='Цвет'/>
                 </label> 
                 </div>
-                <div className='add-product-item-bottom'>
+                {/* <div className='add-product-item-bottom'>
                 Размеры
                 <label className='add-product-size'>
                     <span>m</span>
@@ -74,7 +136,7 @@ const AddProduct = () => {
                     <span>xl</span>
                     <span>xxl</span>
                 </label> 
-                </div>
+                </div> */}
                 <button className='add-product-link'>добавить</button>
             </form>
         </div>
