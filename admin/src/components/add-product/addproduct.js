@@ -141,6 +141,7 @@ const AddProduct = () => {
                     </div>
                 </div>
                 <button className='add-product-link'>добавить</button>
+            <button className='add-product-link'>удолить</button>
             </form>
         </div>
     )

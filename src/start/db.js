@@ -5,7 +5,14 @@ const bcrypt = require("bcrypt");
 const User = require("../models/users");
 
 const db = async() => {
-    connect(config.get("mongoUri"));
+    console.log(config.get('mongoUri'));
+    try {
+        await connect(config.get("mongoUri"));
+        console.log('connected mongodb server')
+
+    } catch (e) {
+        console.log(e);
+    }
 
     const findUser = await User.findOne();
 
